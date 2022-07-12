@@ -1,0 +1,36 @@
+.alphabet {
+  max-width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font: 300 1em 'Fira Sans', sans-serif;
+}
+
+.letter-btn {
+  border: 2px solid #30c5ff;
+  font: inherit;
+  line-height: 1;
+  padding: 0.5em 1em;
+  color: #70d6ff;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.letter-btn:hover,
+.letter-btn:focus,
+.letter-btn.active {
+  border-color: #3fcc59;
+  color: #69db7e;
+  box-shadow: 0 0.5em 0.5em -0.4em #3fcc59;
+  transform: translateY(-0.25em);
+}
+
+.letter-btn.disabled {
+  border-color: #777;
+  color: #777;
+  background-color: #333;
+  pointer-events: none;
+}
